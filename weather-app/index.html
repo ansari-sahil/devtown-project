@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.svgrepo.com/show/503853/weather.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="font-sans text-4xl font-bold" id="head">Weather App</h1>
+    </header>
+      <div style="width: 75%; margin: 40px auto" class="relative head-icon">
+        <div class="absolute bottom-4 left-0 flex pl-3 pointer-events-none">
+          <svg
+            aria-hidden="true"
+            class="w-5 h-5 text-gray-500 dark:text-gray-900"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            ></path>
+          </svg>
+        </div>
+        <input
+          type="search"
+          id="input"
+          class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 dark:placeholder-gray-600 dark:font-semibold dark:text-black"
+          placeholder="Search the location"
+        />
+
+        <button id="button" target="_blank" type="submit" class="text-black absolute right-2.5 bottom-2.5 focus:ring-1 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-slate-200 dark:hover:bg-slate-400">Search</button>
+      </div>
+    <section class="section">
+      <div class="card">
+        <div class="weather flex flex-col">
+          <div>
+            <img src="clear.png" class="weather-icon block"></img>
+          </div>
+            <div>
+              <h1 class="temp block">0°C</h1>
+            </div>
+            <div>
+              <h2 class="city block">Enter City</h2>
+            </div>
+            <div class="details flex items-center justify-between">
+              <div class="col block">
+                <div>
+                  <img src="humidity.png">
+                </div>
+                <div class="block">
+                <p class="humidity">0%</p>
+                <p>Humidity</p>
+                </div>
+              </div>
+              <div class="col block mb-2">
+                <div>
+                  <img src="wind.png">
+                </div>
+                <div class="block">
+                <p class="wind">0 km/h</p>
+                <p>Wind Speed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <script defer src="script.js"></script>
+    
+  </body>
+</html>

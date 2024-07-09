@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Pages - Official Tailwind CSS UI Components</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=400">
+</head>
+
+<body class="mx-5 my-5 box-border">
+  <nav class="flex justify-between w-full">
+    <div class="hidden xl:flex justify-start">
+      <div class="ml-4 mt-3 mb-3 hover:cursor-pointer">Women</div>
+      <div class="ml-4 mt-3 mb-3 hover:cursor-pointer">Men</div>
+      <div class="ml-4 mt-3 mb-3 hover:cursor-pointer">Company</div>
+      <div class="ml-4 mt-3 mb-3 hover:cursor-pointer">Stores</div>
+    </div>
+    <div class="flex xl:hidden items-center">
+      <div class="flex xl:hidden hover:cursor-pointer">
+        <svg height="30px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#231F20" d="M8.667,15h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,15,8.667,15z"></path> <path fill="#231F20" d="M8.667,37h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,37,8.667,37z"></path> <path fill="#231F20" d="M8.667,26h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,26,8.667,26z"></path> </g></svg>
+      </div>
+      <div class="flex ml-5 xl:ml-0 xl:hidden hover:cursor-pointer">
+          <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M10.77 18.3C9.2807 18.3 7.82485 17.8584 6.58655 17.031C5.34825 16.2036 4.38311 15.0275 3.81318 13.6516C3.24325 12.2757 3.09413 10.7616 3.38468 9.30096C3.67523 7.84029 4.39239 6.49857 5.44548 5.44548C6.49857 4.39239 7.84029 3.67523 9.30096 3.38468C10.7616 3.09413 12.2757 3.24325 13.6516 3.81318C15.0275 4.38311 16.2036 5.34825 17.031 6.58655C17.8584 7.82485 18.3 9.2807 18.3 10.77C18.3 11.7588 18.1052 12.738 17.7268 13.6516C17.3484 14.5652 16.7937 15.3953 16.0945 16.0945C15.3953 16.7937 14.5652 17.3484 13.6516 17.7268C12.738 18.1052 11.7588 18.3 10.77 18.3ZM10.77 4.74999C9.58331 4.74999 8.42327 5.10189 7.43657 5.76118C6.44988 6.42046 5.68084 7.35754 5.22672 8.45389C4.77259 9.55025 4.65377 10.7566 4.88528 11.9205C5.11679 13.0844 5.68824 14.1535 6.52735 14.9926C7.36647 15.8317 8.43556 16.4032 9.59945 16.6347C10.7633 16.8662 11.9697 16.7474 13.0661 16.2933C14.1624 15.8391 15.0995 15.0701 15.7588 14.0834C16.4181 13.0967 16.77 11.9367 16.77 10.75C16.77 9.15869 16.1379 7.63257 15.0126 6.50735C13.8874 5.38213 12.3613 4.74999 10.77 4.74999Z" fill="#000000"></path>
+              <path d="M20 20.75C19.9015 20.7504 19.8038 20.7312 19.7128 20.6934C19.6218 20.6557 19.5392 20.6001 19.47 20.53L15.34 16.4C15.2075 16.2578 15.1354 16.0697 15.1388 15.8754C15.1422 15.6811 15.221 15.4958 15.3584 15.3583C15.4958 15.2209 15.6812 15.1422 15.8755 15.1388C16.0698 15.1354 16.2578 15.2075 16.4 15.34L20.53 19.47C20.6704 19.6106 20.7493 19.8012 20.7493 20C20.7493 20.1987 20.6704 20.3893 20.53 20.53C20.4608 20.6001 20.3782 20.6557 20.2872 20.6934C20.1962 20.7312 20.0985 20.7504 20 20.75Z" fill="#000000"></path>
+            </g>
+          </svg>
+        </div>
+    </div>
+    <div class="mt-3 mb-4 hover:cursor-pointer">
+      <img class="h-7" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="icon" />
+    </div>
+    <div class="flex mt-3 mb-3 items-center ">
+      <div class="md:mr-4">
+        <div class="hidden xl:flex mr-4 items-center hover:cursor-pointer">
+          <svg width="30px" height="30px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji"preserveAspectRatio="xMidYMid meet" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill="#138808" d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-4H0v4z"></path>
+              <path fill="#EEE" d="M0 13h36v10H0z"></path>
+              <path fill="#F93" d="M36 13V9a4 4 0 0 0-4-4H4a4 4 0 0 0-4 4v4h36z"></path>
+              <circle fill="navy" cx="18" cy="18" r="4"></circle>
+              <circle fill="#EEE" cx="18" cy="18" r="3"></circle>
+              <path fill="#6666B3" d="M18 15l.146 2.264l1.001-2.035l-.73 2.147l1.704-1.498l-1.497 1.705l2.147-.731l-2.035 1.002L21 18l-2.264.146l2.035 1.001l-2.147-.73l1.497 1.704l-1.704-1.497l.73 2.147l-1.001-2.035L18 21l-.146-2.264l-1.002 2.035l.731-2.147l-1.705 1.497l1.498-1.704l-2.147.73l2.035-1.001L15 18l2.264-.146l-2.035-1.002l2.147.731l-1.498-1.705l1.705 1.498l-.731-2.147l1.002 2.035z">
+              </path>
+              <circle fill="navy" cx="18" cy="18" r="1"></circle>
+            </g>
+          </svg>
+          <div class="ml-2">IND</div>
+        </div>
+      </div>
+      <div class="hidden xl:flex md:mr-8 opacity-40 hover:cursor-pointer">
+        <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M10.77 18.3C9.2807 18.3 7.82485 17.8584 6.58655 17.031C5.34825 16.2036 4.38311 15.0275 3.81318 13.6516C3.24325 12.2757 3.09413 10.7616 3.38468 9.30096C3.67523 7.84029 4.39239 6.49857 5.44548 5.44548C6.49857 4.39239 7.84029 3.67523 9.30096 3.38468C10.7616 3.09413 12.2757 3.24325 13.6516 3.81318C15.0275 4.38311 16.2036 5.34825 17.031 6.58655C17.8584 7.82485 18.3 9.2807 18.3 10.77C18.3 11.7588 18.1052 12.738 17.7268 13.6516C17.3484 14.5652 16.7937 15.3953 16.0945 16.0945C15.3953 16.7937 14.5652 17.3484 13.6516 17.7268C12.738 18.1052 11.7588 18.3 10.77 18.3ZM10.77 4.74999C9.58331 4.74999 8.42327 5.10189 7.43657 5.76118C6.44988 6.42046 5.68084 7.35754 5.22672 8.45389C4.77259 9.55025 4.65377 10.7566 4.88528 11.9205C5.11679 13.0844 5.68824 14.1535 6.52735 14.9926C7.36647 15.8317 8.43556 16.4032 9.59945 16.6347C10.7633 16.8662 11.9697 16.7474 13.0661 16.2933C14.1624 15.8391 15.0995 15.0701 15.7588 14.0834C16.4181 13.0967 16.77 11.9367 16.77 10.75C16.77 9.15869 16.1379 7.63257 15.0126 6.50735C13.8874 5.38213 12.3613 4.74999 10.77 4.74999Z" fill="#000000"></path>
+            <path d="M20 20.75C19.9015 20.7504 19.8038 20.7312 19.7128 20.6934C19.6218 20.6557 19.5392 20.6001 19.47 20.53L15.34 16.4C15.2075 16.2578 15.1354 16.0697 15.1388 15.8754C15.1422 15.6811 15.221 15.4958 15.3584 15.3583C15.4958 15.2209 15.6812 15.1422 15.8755 15.1388C16.0698 15.1354 16.2578 15.2075 16.4 15.34L20.53 19.47C20.6704 19.6106 20.7493 19.8012 20.7493 20C20.7493 20.1987 20.6704 20.3893 20.53 20.53C20.4608 20.6001 20.3782 20.6557 20.2872 20.6934C20.1962 20.7312 20.0985 20.7504 20 20.75Z" fill="#000000"></path>
+          </g>
+        </svg>
+      </div>
+      <div class="mr-8 opacity-40 hover:cursor-pointer">
+        <svg fill="#000000" width="28px" height="28px" viewBox="0 0 32 32" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <g id="Icon">
+              <path d="M4.96,27.999l0.051,0.001l0.043,-0.004c0.191,-0.024 0.957,-0.171 0.957,-0.996c-0,-4.971 4.029,-9 9,-9c0.661,-0 1.327,-0 1.988,-0c4.97,-0 9,4.029 9,9l-0,0c-0,0.021 0,0.041 0.002,0.061c0.015,0.325 0.153,0.537 0.323,0.676c0.178,0.164 0.415,0.263 0.675,0.263c-0,0 1,-0.057 1,-1c-0,-6.075 -4.925,-11 -11,-11c-0.661,-0 -1.327,-0 -1.988,-0c-6.075,-0 -11,4.925 -11,11c-0,-0.05 0.003,-0.092 0.008,-0.127c-0.005,0.041 -0.008,0.084 -0.008,0.127c-0,0.535 0.42,0.972 0.949,0.999Z">
+              </path>
+              <path d="M15.994,3.988c-2.763,-0 -5.006,2.243 -5.006,5.006c-0,2.763 2.243,5.006 5.006,5.006c2.763,0 5.006,-2.243 5.006,-5.006c0,-2.763 -2.243,-5.006 -5.006,-5.006Zm-0,2c1.659,-0 3.006,1.347 3.006,3.006c0,1.659 -1.347,3.006 -3.006,3.006c-1.659,0 -3.006,-1.347 -3.006,-3.006c-0,-1.659 1.347,-3.006 3.006,-3.006Z">
+              </path>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="mr-4 flex items-center hover:cursor-pointer">
+        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M8 12L8 8C8 5.79086 9.79086 4 12 4V4C14.2091 4 16 5.79086 16 8L16 12" stroke="#525151" stroke-linecap="round"></path>
+            <path d="M3.69435 12.6678C3.83942 10.9269 3.91196 10.0565 4.48605 9.52824C5.06013 9 5.9336 9 7.68053 9H16.3195C18.0664 9 18.9399 9 19.514 9.52824C20.088 10.0565 20.1606 10.9269 20.3057 12.6678L20.8195 18.8339C20.904 19.8474 20.9462 20.3542 20.6491 20.6771C20.352 21 19.8435 21 18.8264 21H5.1736C4.15655 21 3.64802 21 3.35092 20.6771C3.05382 20.3542 3.09605 19.8474 3.18051 18.8339L3.69435 12.6678Z" stroke="#525151"></path>
+          </g>
+        </svg>
+        <div class="ml-2">
+          0
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr class="mt-2" />
+  <div class="flex mb-8 flex-col lg:flex-row">
+    <div class="left w-full lg:w-1/2 flex flex-col pt-20 justify-evenly md:ml-10 lg:ml-0">
+      <div>
+        <img class="h-[530px] w-4/5 ml-10 rounded-lg border" src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg" alt="Product" />
+      </div>
+      <div class="flex-row mt-6 hidden lg:ml-0 ml-8 md:flex md:flex-row xl:ml-20 md:ml-20 lg:mr-8 ">
+        <div>
+          <img class="h-[100px] ml-5 rounded-lg border-2 border-indigo-600 hover:cursor-pointer" src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg" alt="Product image"/>
+        </div>
+        <div>
+          <img class="h-[100px] ml-5 rounded-lg border hover:cursor-pointer" src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-02.jpg" alt="Product image">
+        </div>
+        <div>
+          <img class="h-[100px] ml-5 rounded-lg border hover:cursor-pointer" src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-03.jpg" alt="Product image">
+        </div>
+        <div>
+          <img class="h-[100px] ml-5 rounded-lg border hover:cursor-pointer" src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-04.jpg" alt="Product image">
+        </div>
+      </div>
+    </div>
+    <div class="right flex flex-col w-full lg:w-1/2 pt-20 mt-10">
+      <div class="font-bold text-4xl my-1">
+        <h1>Zip Tote Basket</h1>
+      </div>
+      <div class="text-3xl font-sans my-2">
+        <p>$140</p>
+      </div>
+      <div class="flex my-2">
+        <div>
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="17px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill="#6366F1" d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15 C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343 c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957 c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25 c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657 C63.951,25.771,64.131,24.987,63.893,24.277z">
+              </path>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="17px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill="#6366F1" d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15 C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343 c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957 c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25 c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657 C63.951,25.771,64.131,24.987,63.893,24.277z">
+              </path>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="19px" height="17px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
+            fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill="#6366F1"d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15 C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343 c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957 c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25 c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657 C63.951,25.771,64.131,24.987,63.893,24.277z">
+              </path>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="19px" height="17px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
+            fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill="#6366F1" d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15 C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343 c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957 c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25 c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657 C63.951,25.771,64.131,24.987,63.893,24.277z">
+              </path>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="19px" height="17px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
+            fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill="#6B7280" d="M63.893,24.277c-0.238-0.711-0.854-1.229-1.595-1.343l-19.674-3.006L33.809,1.15 C33.479,0.448,32.773,0,31.998,0s-1.48,0.448-1.811,1.15l-8.815,18.778L1.698,22.935c-0.741,0.113-1.356,0.632-1.595,1.343 c-0.238,0.71-0.059,1.494,0.465,2.031l14.294,14.657L11.484,61.67c-0.124,0.756,0.195,1.517,0.822,1.957 c0.344,0.243,0.747,0.366,1.151,0.366c0.332,0,0.666-0.084,0.968-0.25l17.572-9.719l17.572,9.719c0.302,0.166,0.636,0.25,0.968,0.25 c0.404,0,0.808-0.123,1.151-0.366c0.627-0.44,0.946-1.201,0.822-1.957l-3.378-20.704l14.294-14.657 C63.951,25.771,64.131,24.987,63.893,24.277z">
+              </path>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="my-5">
+        <p>
+          The Zip Tote Basket is the perfect midpoint between shopping tote
+          and comfy backpack. With convertible straps, you can hand carry,
+          should sling, or backpack this convenient and spacious bag. The zip
+          top and durable canvas construction keeps your goods protected for
+          all-day use.
+        </p>
+      </div>
+      <div class="mb-5">
+        <div>
+          <div class="text-sm font-sans">
+            <h3>Color</h3>
+          </div>
+          <div class="flex py-1">
+            <div class="hover:cursor-pointer border-2 border-double rounded-full border-black">
+              <svg width="36px" height="36px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(12,12), scale(0)">
+                  <rect x="0" y="0" width="24.00" height="24.00" rx="12" fill="#d6d6d6" strokewidth="0"></rect>
+                </g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#000000"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="mx-1 hover:cursor-pointer">
+              <svg width="36px" height="36px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(2.879999999999999,2.879999999999999), scale(0.76)">
+                  <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#d6d6d6" strokewidth="0"></rect>
+                </g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    fill="#ffffff"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="mx-1 hover:cursor-pointer">
+              <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#6B7280"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex my-7">
+          <div>
+            <button class="py-3 px-28 bg-indigo-600 text-white font-semibold hover:bg-indigo-700 rounded-md" type="button">Add to Bag</button>
+          </div>
+          <div class="mx-5 flex self-center opacity-40">
+            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M8.999 3.567c0.98 0 2.753 0.469 5.628 3.301l1.425 1.403 1.404-1.426c1.996-2.028 4.12-3.288 5.543-3.288 1.919 0 3.432 0.656 4.907 2.128 1.39 1.386 2.156 3.23 2.156 5.191 0.001 1.962-0.764 3.807-2.169 5.209-0.114 0.116-6.156 6.634-11.218 12.097-0.238 0.227-0.511 0.26-0.656 0.26-0.143 0-0.412-0.032-0.65-0.253-1.233-1.372-10.174-11.313-11.213-12.351-1.391-1.388-2.157-3.233-2.157-5.194s0.766-3.804 2.158-5.192c1.353-1.352 2.937-1.885 4.842-1.885zM8.999 1.567c-2.392 0-4.5 0.715-6.255 2.469-3.659 3.649-3.659 9.566 0 13.217 1.045 1.045 11.183 12.323 11.183 12.323 0.578 0.578 1.336 0.865 2.093 0.865s1.512-0.287 2.091-0.865c0 0 11.090-11.97 11.208-12.089 3.657-3.652 3.657-9.57 0-13.219-1.816-1.813-3.845-2.712-6.319-2.712-2.364 0-5 1.885-6.969 3.885-2.031-2-4.585-3.874-7.031-3.874v0z">
+                </path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="hover:cursor-pointer">
+        <div class="flex justify-between my-5">
+          <div><span class="font-medium">Features</span></div>
+          <div class="opacity-40 hover:opacity-60">
+            <svg fill="#000000" width="40px" height="40px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M486 691h52V538h153v-52H538V333h-52v153H333v52h153z"></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <hr />
+        <div class="flex justify-between my-5">
+          <div><span class="font-medium">Care</span></div>
+          <div class="opacity-40 hover:opacity-60">
+            <svg fill="#000000" width="40px" height="40px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M486 691h52V538h153v-52H538V333h-52v153H333v52h153z"></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <hr />
+        <div class="flex justify-between my-5">
+          <div><span class="font-medium">Shipping</span></div>
+          <div class="opacity-40 hover:opacity-60">
+            <svg fill="#000000" width="40px" height="40px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M486 691h52V538h153v-52H538V333h-52v153H333v52h153z"></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <hr />
+        <div class="flex justify-between my-5">
+          <div><span class="font-medium">Returns</span></div>
+          <div class="opacity-40 hover:opacity-60">
+            <svg fill="#000000" width="40px" height="40px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M486 691h52V538h153v-52H538V333h-52v153H333v52h153z"></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="mb-20 lg:mb-0" />
+  <div class=" mx-0 lg:mx-8 lg:p-16">
+    <div class="text-xl font-bold lg:ml-8 ">
+      <span>Customers also bought</span>
+    </div>
+    <div class="flex w-full lg:justify-between flex-col justify-around mt-5 lg:flex-row xl:flex-row md:flex-wrap md:flex-row font-medium">
+      <div>
+        <div class="h-72 relative">
+          <img class="h-72 w-full lg:w-[250px]" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdoa5LmLLS-RiWgcnYHxs18LMbS_fTuFnYh9hP4x3CzgsBZ68a" alt="" srcset="" />
+            <div class="z-10 absolute h-1/2 bg-gradient-to-t from-black to-transparent w-full opacity-60 bottom-0 rounded-lg">
+            </div>
+            <div class="z-20 absolute bottom-1 right-2 text-white text-xl font-bold opacity-70 mb-3 mr-3">$140</div>
+        </div>
+        <div>
+          <div>
+            <h3 class="text-sm font-sans mt-2">Zip Tote Basket</h3>
+          </div>
+          <div class="mb-8 my-1">
+            <p class="text-sm text-gray-400 font-sans">White and black</p>
+          </div>
+        </div>
+        <div>
+          <button class="bg-gray-100 w-full lg:w-[250px] rounded-md py-2 lg:px-8 font-sans text-xs hover:bg-gray-200" type="submit">Add to Bag</button>
+        </div>
+      </div>
+      <div>
+        <div class="relative">
+          <img class="h-72 w-full lg:w-[250px]" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqnviTWa7UC9nq16TqVfS10dbH-vCaVbgdgI9bKRJ4ijqkMzgd" alt="" srcset="" />
+            <div class="z-10 absolute h-1/2 bg-gradient-to-t from-black to-transparent w-full opacity-60 bottom-0 rounded-lg">
+            </div>
+            <div class="z-20 absolute bottom-1 right-2 text-white text-xl font-bold opacity-70 mb-3 mr-3">$150</div>
+        </div>
+        <div>
+          <div>
+            <h3 class="text-sm font-sans mt-2">Zip High Wall Tote</h3>
+          </div>
+          <div class="mb-8 my-1">
+            <p class="text-sm text-gray-400 font-sans">White and blue</p>
+          </div>
+        </div>
+        <div>
+          <button class="bg-gray-100 w-full lg:w-[250px] rounded-md py-2 lg:px-8 font-sans text-xs hover:bg-gray-200" type="submit">Add to Bag</button>
+        </div>
+      </div>
+      <div>
+        <div class="relative">
+          <img class="h-72 w-full lg:w-[250px]" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYrsHQfe01uTV0FxtnHdq4Iz150oT90-DvA-O07dqg0Gkt9lMD" alt="" srcset="" />
+            <div class="z-10 absolute h-1/2 bg-gradient-to-t from-black to-transparent w-full opacity-60 bottom-0 rounded-lg">
+            </div>
+            <div class="z-20 absolute bottom-1 right-2 text-white text-xl font-bold opacity-70 mb-3 mr-3">$210</div>
+        </div>
+        <div>
+          <div>
+            <h3 class="text-sm font-sans mt-2">Halfsize Tote</h3>
+          </div>
+          <div class="mb-8 my-1">
+            <p class="text-sm text-gray-400 font-sans">Clay</p>
+          </div>
+        </div>
+        <div>
+          <button class="bg-gray-100 w-full lg:w-[250px] rounded-md py-2 lg:px-8 font-sans text-xs hover:bg-gray-200" type="submit">Add to Bag</button>
+        </div>
+      </div>
+      <div>
+        <div class="relative">
+          <img class="h-72 w-full lg:w-[250px]" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyMUKE5XSJRWueGQJaP5qxmtCUtu0OkuP-cau6F7O4857GxzpV" alt="" srcset="" />
+          <div class="z-10 absolute h-1/2 bg-gradient-to-t from-black to-transparent w-full opacity-60 bottom-0 rounded-lg">
+          </div>
+          <div class="z-20 absolute bottom-1 right-2 text-white text-xl font-bold opacity-70 mb-3 mr-3">$210</div>
+        </div>
+        <div>
+          <div>
+            <h3 class="text-sm font-sans mt-2">High Wall Tote</h3>
+          </div>
+          <div class="mb-8 my-1">
+            <p class="text-sm text-gray-400 font-sans">Black and orange</p>
+          </div>
+        </div>
+        <div>
+          <button class="bg-gray-100 w-full lg:w-[250px] rounded-md py-2 lg:px-8 font-sans text-xs hover:bg-gray-200" type="submit">Add to Bag</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="md: mt-20 lg:mt-0"/>
+  <div class="lg:ml-8 mt-20 lg:mb-20 mr-8 flex justify-between  flex-col xl:flex-row">
+    <div class="flex justify-between md:pr-5 w-full xl:w-2/4 lg:flex-row lg:justify-around">
+      <div class="hidden lg:flex">
+        <img class="h-7" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="icon" />
+      </div>
+      <div class="flex flex-col md:flex-row">
+        <div>
+          <h1 class="text-sm mb-4 font-semibold">Products</h1>
+          <ul class="text-sm text-gray-600">
+            <li class="hover:cursor-pointer">Bags</li>
+            <li class="mt-4 hover:cursor-pointer">Tees</li>
+            <li class="mt-4 hover:cursor-pointer">Objects</li>
+            <li class="mt-4 hover:cursor-pointer">Home Goods</li>
+            <li class="mt-4 hover:cursor-pointer">Accessories</li>
+          </ul>
+      </div>
+      <div class="ml-0 mt-10 md:ml-52 lg:ml-40 md:mt-0 xl:ml-24">
+          <h1 class="text-sm mb-4 font-semibold">Company</h1>
+          <ul class="text-sm text-gray-600">
+            <li class="hover:cursor-pointer">Who we are</li>
+            <li class="mt-4 hover:cursor-pointer">Sustainability</li>
+            <li class="mt-4 hover:cursor-pointer">Press</li>
+            <li class="mt-4 hover:cursor-pointer">Careers</li>
+            <li class="mt-4 hover:cursor-pointer">Terms & Conditions</li>
+            <li class="mt-4 hover:cursor-pointer">Privacy</li>
+          </ul>
+      </div>
+      </div>
+      <div class="mb-5 lg:mb-0">
+        <h1 class="text-sm mb-4 font-semibold">Customer Service</h1>
+        <ul class="text-sm text-gray-600">
+          <li class="hover:cursor-pointer">Contact</li>
+          <li class="mt-4 hover:cursor-pointer">Shipping</li>
+          <li class="mt-4 hover:cursor-pointer">Returns</li>
+          <li class="mt-4 hover:cursor-pointer">Warranty</li>
+          <li class="mt-4 hover:cursor-pointer">Secure Payments</li>
+          <li class="mt-4 hover:cursor-pointer">FAQ</li>
+          <li class="mt-4 hover:cursor-pointer">Find a store</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col my-2 mt-20 lg:mt-10 xl:mt-0">
+      <div>
+        <h1 class="text-sm mb-4 font-semibold text-left">Sign up for our newsletter</h1>
+      </div>
+      <div>
+        <p class="text-sm text-gray-600 text-left">The latest deals and savings, sent to your inbox weekly.</p>
+      </div>
+      <div class="lg:mr-[130px] flex w-full mt-2">
+        <input class="pr-1 md:pr-6 md:pl-4 py-2 border-gray-200 rounded-md border" type="email" name="" id="" />
+        <button class="bg-indigo-600 text-white font-semibold rounded-md py-2 font-sans text-sm px-10 ml-5 hover:bg-indigo-700" type="submit">Sign up</button>
+      </div>
+    </div>
+  </div>
+  <hr class="mt-20 lg:mt-10">
+  <div class="opacity-60 my-10 flex justify-center text-sm">
+    © 2021 Your Company, Inc. All rights reserved.
+  </div>
+</body>
+
+</html>
